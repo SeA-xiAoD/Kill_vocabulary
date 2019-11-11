@@ -61,7 +61,7 @@ class PlanGenerator:
             try:
                 self._start_time = datetime.date(temp_year, temp_month, temp_day)
             except:
-                raise Exception("请输入有效8位年月日，如20190520！")
+                raise Exception("请输入有效8位年月日，如20190520！ + 1)")
 
         
     def set_generator(self, list_count, list_per_day, start_time):
