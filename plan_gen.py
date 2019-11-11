@@ -109,7 +109,7 @@ class PlanGenerator:
         self.calendar = {}
 
         # 初始化时间表
-        for i in range((self._list_count + 1) // self._list_per_day + 29):
+        for i in range(self._list_count // self._list_per_day + 29):
             self.calendar[str(self._start_time + datetime.timedelta(i))] = []
 
         # 添加list序号进入时间表
