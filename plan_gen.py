@@ -109,7 +109,7 @@ class PlanGenerator:
         self.calendar = {}
 
         # 初始化时间表
-        for i in range(self._list_count // self._list_per_day + 29):
+        for i in range(int((self._list_count + self._list_per_day - 0.5) / self._list_per_day + 29)):
             self.calendar[str(self._start_time + datetime.timedelta(i))] = []
 
         # 添加list序号进入时间表
@@ -138,6 +138,8 @@ class PlanGenerator:
         # 排序
         for (key, value) in self.calendar.items():
             self.calendar[key] = sorted(value)
+
+        return self.calendar
 
 
     def output_txt(self, file_path):

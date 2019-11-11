@@ -9,17 +9,33 @@
 ```
 # 命令行版本用法很简单啦，输入以下命令根据提示正确输入就好
 python main.py
+
+
+# 如果是PDF版本，需安装 pdfkit 和 wkhtmltopdf
+pip iustall pdfkit
+
+# Debian/Ubuntu
+apt-get install wkhtmltopdf
+
+# Redhat/CentOS
+yum install wkhtmltopdf
+
+# Mac OS X
+brew install Caskroom/cask/wkhtmltopdf
 ```
 
 ------------------
 ### 依赖
-* python 3.7.3
+* python==3.7.3
 
+(PDF版本)
+* pdfkit==0.6.1
+* wkhtmltopdf==0.12.3.2
 
 ------------------
 ### 计划
 - [x] 命令行输入，输出TXT文件
-- [ ] 命令行输入，输出PDF文件
+- [x] 命令行输入，输出PDF文件
 - [ ] GUI界面
 
 ------------------
