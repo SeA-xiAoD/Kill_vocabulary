@@ -57,7 +57,7 @@ class PlanGenerator:
 
             temp_year = int(start_time[:4])
             temp_month = int(start_time[4:6])
-            temp_day = int(start_time[7:])
+            temp_day = int(start_time[6:])
             try:
                 self._start_time = datetime.date(temp_year, temp_month, temp_day)
             except:
@@ -93,7 +93,7 @@ class PlanGenerator:
 
         temp_year = int(start_time[:4])
         temp_month = int(start_time[4:6])
-        temp_day = int(start_time[7:])
+        temp_day = int(start_time[6:])
         try:
             self._start_time = datetime.date(temp_year, temp_month, temp_day)
         except:

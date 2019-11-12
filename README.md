@@ -36,7 +36,6 @@ brew install Caskroom/cask/wkhtmltopdf
 ### 计划
 - [x] 命令行输入，输出TXT文件
 - [x] 命令行输入，输出PDF文件
-- [ ] GUI界面
 
 ------------------
 
